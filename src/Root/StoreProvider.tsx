@@ -1,5 +1,5 @@
 import React from 'react';
-import RootStore from './RootStore';
+import RootStore from 'Root/RootStore';
 import { Provider } from 'mobx-react';
 
 

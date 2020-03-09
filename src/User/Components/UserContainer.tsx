@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
-import { STORES } from '../../Common/Constants';
-import UserStore  from '../../User/Store/UserStore'; 
+import { STORES } from 'Common/Constants';
+import UserStore  from 'User/Store/UserStore'; 
 
 
 interface InjectedProps {
