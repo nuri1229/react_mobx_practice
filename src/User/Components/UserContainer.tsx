@@ -3,8 +3,9 @@ import { observer, inject } from 'mobx-react';
 import { STORES } from '../../Common/Constants';
 import UserStore  from '../../User/Store/UserStore'; 
 
+
 interface InjectedProps {
-  [STORES.USER_STORE]?: UserStore
+  [STORES.USER_STORE]: UserStore
 }
 
 @inject('userStore')
@@ -14,7 +15,7 @@ class UserContainer extends Component<InjectedProps> {
   componentDidMount () {
     
     const { userStore } = this.props;
-    userStore!.getAllUsers();
+    userStore.getAllUsers();
     
   }
 
@@ -26,7 +27,7 @@ class UserContainer extends Component<InjectedProps> {
 
     return (
       <div>UserContainer
-        {userStore && userStore.users.map(user => <div>{user.name}</div>)}
+        {userStore.users.map(user => <div>{user.name}</div>)}
       </div>
       
     )

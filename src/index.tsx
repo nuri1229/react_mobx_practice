@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import StoreProvider from './Root/StoreProvider';
+import { Provider } from 'mobx-react';
+import RootStore from './Root/RootStore';
 
 
 ReactDOM.render(

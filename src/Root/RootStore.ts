@@ -6,4 +6,3 @@ export default class RootStore {
 
   userStore = new UserStore(new UserService());
 }
-

@@ -6,7 +6,7 @@ import { Provider } from 'mobx-react';
 interface StoreProviderProp {}
 
 const rootStore = new RootStore()
-
+console.log('{...rootStore}', {...rootStore})
 const StoreProvider: React.FunctionComponent<StoreProviderProp> =({
   children
 }) =>  <Provider {...rootStore}>{children}</Provider>;
